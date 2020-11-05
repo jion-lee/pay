@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="promotion", url="${api.url.promotion}")
-public interface PromotionService {
+@FeignClient(name="gift", url="${api.url.gift}")
+public interface GiftService {
 
-    @RequestMapping(method= RequestMethod.POST, path="/promotions")
-    public void payCancel(@RequestBody Promotion promotion);
+    @RequestMapping(method= RequestMethod.POST, path="/gifts")
+    public void payCancel(@RequestBody Gift gift);
 
 }

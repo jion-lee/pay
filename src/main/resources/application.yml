@@ -40,7 +40,7 @@ server:
 
 api:
   url:
-    promotion: http://localhost:8086
+    gift: http://localhost:8086
 ---
 
 spring:
@@ -69,4 +69,4 @@ spring:
 
 api:
   url:
-    promotion: http://promotion:8080
+    gift: ${configurl}

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pay
-  namespace: pp82
+  namespace: phone82
   labels:
     app: pay
 spec:
@@ -18,15 +18,15 @@ spec:
       containers:
         - name: pay
 #          image: username/pay:latest
-          image: admin37.azurecr.io/pay:latest
+          image: admin29.azurecr.io/pay:latest
           ports:
             - containerPort: 8080
           env:
-              - name: configurl
-                valueFrom:
-                  configMapKeyRef:
-                    name: apiurl
-                    key: url
+            - name: configurl
+              valueFrom:
+                configMapKeyRef:
+                  name: apiurl
+                  key: url
           readinessProbe:
             httpGet:
               path: '/actuator/health'

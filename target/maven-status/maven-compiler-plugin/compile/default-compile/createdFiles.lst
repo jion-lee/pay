@@ -5,9 +5,9 @@ phoneseller\PaymentRepository.class
 phoneseller\config\kafka\KafkaProcessor.class
 phoneseller\OrderCancelled.class
 phoneseller\AbstractEvent.class
-phoneseller\external\Promotion.class
 phoneseller\PolicyHandler.class
-phoneseller\external\PromotionService.class
+phoneseller\external\GiftService.class
 phoneseller\PayApplication.class
 phoneseller\PayCompleted.class
+phoneseller\external\Gift.class
 phoneseller\PayCancelled.class
